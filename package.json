@@ -1,12 +1,11 @@
 {
   "name": "fast-pgn-parser",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Basic but fast PGN parser",
   "type": "module",
   "main": "src/index.js",
   "scripts": {
     "install": "node scripts/install-libpgn.cjs",
-    "postinstall": "node scripts/fix-node-gyp-vs18.cjs",
     "rebuild": "node-gyp rebuild",
     "test": "node --test",
     "test:coverage": "c8 node --test",
@@ -14,11 +13,11 @@
     "benchmark": "node scripts/benchmark-parse.mjs"
   },
   "dependencies": {
-    "node-addon-api": "^8.0.0"
+    "node-addon-api": "^8.0.0",
+    "node-gyp": "^12.1.0"
   },
   "devDependencies": {
     "c8": "^10.1.2",
-    "node-gyp": "^10.0.0",
     "pgn-parser": "^2.2.1"
   },
   "engines": {
