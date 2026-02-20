@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Native addon build output
+build/
+
+# Cloned at npm install (see scripts/install-libpgn.cjs)
+vendor/libpgn/
+
+# Coverage (c8)
+coverage/
+.nyc_output/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Optional
+.env
+.env.local
