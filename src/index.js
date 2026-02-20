@@ -8,10 +8,10 @@ import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 let nativeBinding = null;
 try {
-  nativeBinding = require('./build/Release/pgn_parser.node');
+  nativeBinding = require('../build/Release/pgn_parser.node');
 } catch {
   try {
-    nativeBinding = require('./build/Debug/pgn_parser.node');
+    nativeBinding = require('../build/Debug/pgn_parser.node');
   } catch (err) {
     throw new Error(
       'fast-pgn-parser: native addon failed to load. Ensure the C bindings are built (npm install / npm run rebuild). ' +

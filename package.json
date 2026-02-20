@@ -1,6 +1,6 @@
 {
   "name": "fast-pgn-parser",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Basic but fast PGN parser",
   "type": "module",
   "main": "src/index.js",
